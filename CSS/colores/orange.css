@@ -1,0 +1,12 @@
+.promo-section,
+footer,
+.section-title .title::before,
+.header-color {
+    background-color: #ee4b22;
+}
+
+.products-section .product-content .product-price .new-price,
+.footer .footer-social-links a:hover i,
+.section-title .title {
+    color: #ee4b22;
+}
