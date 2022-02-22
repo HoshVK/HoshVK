@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.section-title {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.section-title .title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 15px 0 15px;
+    position: relative;
+    padding: 5px 10px;
+    z-index: 1;
+}
+
+.section-title .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 4px;
+    opacity: .1;
+}
+
+
+/* header */
+
+header {
+    padding: 20px 0 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.header-img img {
+    max-width: 100px;
+    width: 100%;
+}
+
+.header-img {
+    text-align: center;
+    line-height: 70px;
+}
+
+.text-header {
+    padding: 15px 0;
+    text-align: center;
+    line-height: 40px;
+}
+
+.text-header h1 {
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header-color {
+    border-bottom: 1px solid#fff;
+}
+
+
+/* ofertas */
+
+.promo-section {
+    padding: 70px 0 250px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.promo-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 180px;
+    background-image: url("../img/whiteShapae.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.promo-section .promo-content h1 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+}
+
+.promo-section .promo-content p {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.promo-section .promo-img img {
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+}
+
+.promo-section .promo-content .old-price {
+    font-size: 40px;
+    display: inline-block;
+    color: #dddddd;
+    font-weight: 400;
+}
+
+
+/* categorias */
+
+.products-section {
+    padding: 80px 0 80px;
+    background-color: #fff;
+}
+
+.products-section .products-item {
+    box-shadow: 0 0 10px #dddde3;
+    margin: 15px 0;
+}
+
+.products-section .products-item .product-img {
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.products-section .product-img img {
+    width: 100%;
+    display: block;
+}
+
+.products-section .product-content {
+    padding: 0 30px;
+    display: block;
+}
+
+.products-section .product-content .product-price {
+    margin: 15px 0 5px;
+}
+
+.products-section .product-content .product-price .new-price {
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.products-section .product-content .product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    line-height: 26px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+
+/* footer */
+
+.footer {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footer .footer-logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 0 15px;
+}
+
+.footer .footer-text p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #eee;
+    font-weight: 400;
+    margin: 0 0 25px;
+    font-style: italic;
+}
+
+.footer .footer-social-links {
+    margin-bottom: 30px;
+}
+
+.footer .footer-social-links a {
+    display: inline-block;
+    text-align: center;
+    margin: 0 4px;
+}
+
+.footer .footer-social-links a i {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    display: block;
+    color: #fff;
+    line-height: 38px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+
+.footer .footer-social-links a:hover i {
+    background-color: #fff;
+}
+
+.footer .copyright {
+    border-top: 1px solid #ffffff11;
+    padding: 20px 15px;
+}
+
+.footer .copyright p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: #eee;
+    font-weight: 400;
+}
