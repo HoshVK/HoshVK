@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../img/h.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/CalculadoraResponsive.css">
+</head>
+
+<body>
+    <div class="carcasa">
+        <div class="titulo">Calculadora Básica</div>
+
+        <div class="pantalla">
+            <div id="historial"></div>
+            <div id="valores"></div>
+        </div>
+
+        <div class="contenedor-teclas">
+            <button type="button" onclick="display.borrarTodos()">AC</button>
+            <button type="button" onclick="display.borrar()">&larr;</button>
+            <button type="button" class="operador" value="multiplicar">/</button>
+            <button type="button" class="numero">7</button>
+            <button type="button" class="numero">8</button>
+            <button type="button" class="numero">9</button>
+            <button type="button" class="operador" value="multiplicar">X</button>
+            <button type="button" class="numero">4</button>
+            <button type="button" class="numero">5</button>
+            <button type="button" class="numero">6</button>
+            <button type="button" class="operador" value="restar">-</button>
+            <button type="button" class="numero">1</button>
+            <button type="button" class="numero">2</button>
+            <button type="button" class="numero">3</button>
+            <button type="button" class="operador" value="sumar">+</button>
+            <button type="button" class="numero">.</button>
+            <button type="button" class="numero">0</button>
+            <button type="button" class="operador" value="igual">=</button>
+        </div>
+    </div>
+    <script src="../js/Display.js"></script>
+    <script src="../js/Resuelve.js"></script>
+    <script src="../js/calculadora.js"></script>
+</body>
+
+</html>
