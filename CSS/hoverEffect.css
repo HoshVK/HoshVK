@@ -1,0 +1,118 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ddd;
+}
+/* encabezado */
+.e1{
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+  width: 49%;
+}
+h1{
+  color: #333;
+  padding-left:10%;
+}
+.btn{
+  width: 150px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #fff;
+  color: #5cb85c;
+  border: 2px solid#5cb85c;
+}
+
+.container {
+  max-width: 1125px;
+  margin: 0 auto;
+  background-color: #5cb85c;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  background-color: #f0f0f0f0;
+}
+/*--------------- Items ---------------*/
+
+.box {
+  width: 330px;
+  height: 265px;
+  display: inline-block;
+  position: relative;
+  margin: 10px auto;
+  text-decoration: none;
+}
+.item-gallery {
+	position: relative;
+	height: auto;
+	padding: 0;
+	background-color: #f7fbde;
+	background-clip: padding-box;
+	border: 10px solid transparent;
+	overflow: hidden;
+}
+.image-preview {
+	position: relative;
+	top: 0;
+	height: auto;
+}
+.image-preview > img {
+	width: 100%;
+	height: auto;
+}
+.image-description {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	padding: 1.8em 0;
+	text-align: center;
+	background: #191919;
+}
+.image-preview,
+.image-description {
+	transition: all 600ms ease;
+}
+.item-gallery:hover .image-description {
+	transform: translateY(-100%);
+}
+.item-gallery:hover .image-preview {
+	transform: translateY(-2.5em);
+}
+.button0 {
+   width: 8vw;
+   font-size: 2vh;
+   margin: 0 auto;
+   padding: 1vh;
+   border-radius: 10px;
+   bordeR: 2px solid #fff;
+   color: #fff;
+}
+.button0:hover {
+   cursor: pointer;
+   background: #fff;
+   color: #191919;
+   transition-delay: 0s;
+}
+
+
+/* Because there is no hover on a touch devide, we need to move the text to the bottom of the image and display it by default */
+
+@media only screen and (max-width: 1024px) {
+  .text-wrapper {
+    opacity: 1;
+    justify-content: flex-end;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .title {
+    margin-bottom: 1em;
+  }
+}
